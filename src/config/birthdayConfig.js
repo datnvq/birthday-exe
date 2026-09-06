@@ -1,7 +1,7 @@
 export const birthdayConfig = {
   name: 'Mẫn Xinh Gái',
   birthdayMessage: 'Lại thêm một tuổi nữa rồi đó!\nChúc Mẫn mọi thứ nhé, muốn chúc từng cấy nhưng mà sợ sến Mẫn dị ứng.\nNhưng chúc chi chúc quan trọng nhất là mãi chơi thân với t nha Mẫn! 💅',
-  closingMessage: "Happy Birthday con bạn thân, bạn cùng xe học hóa xinh gái nhất quả đất! ❤️🎂",
+  closingMessage: "Happy Birthday công chúa của F4 nhá, bạn cùng xe học hóa xinh gái nhất quả đất! ❤️🎂",
   secretMessage: 'Khiếp, mò vô tận đây luôn? Tính tìm tiền mừng tuổi à? Mơ đi cưng, ra ăn bánh kem lẹ tề! 🍰🤣',
   
   accentColor: '#F6C85F',
@@ -11,15 +11,35 @@ export const birthdayConfig = {
   memories: [
     { 
       image: '/memories/01.jpg', 
-      caption: 'Quả ảnh dìm huyền thoại không bao giờ quên 😂' 
+      caption: 'Nữ đế không ngai của đồi chè' 
     },
     { 
       image: '/memories/02.jpg', 
-      caption: 'Lúc này nhìn cũng ra dáng con người đấy ✨' 
+      caption: 'Xa quê có tí nhớ đồi chè cũng dễ hiểu thôi' 
     },
     { 
       image: '/memories/03.jpg', 
-      caption: 'Tuổi mới xinh đẹp hơn, giàu hơn để còn bao tao ăn nha 💖' 
+      caption: 'Tứ hoàng ra khơi mà mẹ vẫn tạo dáng cho được' 
+    },
+    { 
+      image: '/memories/04.jpg', 
+      caption: 'kỉ niệm đẹp. bắt tay với cướp mà tưởng đồng minh' 
+    },
+    { 
+      image: '/memories/05.jpg', 
+      caption: 'Vua mệt rồi đừng phiền vua. Nhất dương chỉ' 
+    },
+    { 
+      image: '/memories/06.jpg', 
+      caption: 'Sinh nhật đó, ước ước đồ bây ơi' 
+    },
+    { 
+      image: '/memories/07.jpg', 
+      caption: 'Ước xong rồi thì làm tấm mà góc hơi thiếu sáng, kệ có ảnh là được' 
+    },
+    { 
+      image: '/memories/08.jpg', 
+      caption: 'chụp choẹt hết rồi tí quên bánh kem. Sinh nhật của sinh nhất nhaaaaaa' 
     },
   ],
 
@@ -31,7 +51,7 @@ export const birthdayConfig = {
   camera: {
     enabled: true,
     recordReaction: true,
-    showOverlay: false // Ẩn khung cam trên màn hình để tạo bất ngờ, nhưng video xuất ra vẫn có camera PiP góc phải
+    showOverlay: false // Ẩn khung cam trên màn hình
   }
 };
 
