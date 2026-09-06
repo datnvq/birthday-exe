@@ -67,7 +67,7 @@ const CameraPermission = ({ onGranted, onSkip }) => {
           </button>
           
           <button onClick={handleRefusal} style={styles.skipButton}>
-            [ KHÔNG, TÔI NGẠI ]
+            [ KHÔNG, CÔNG CHÚA Y VINH BỮA NI NGẠI LẮM ]
           </button>
 
           <p style={styles.privacy}>Video chỉ được xử lý trên thiết bị này.</p>
