@@ -1,6 +1,6 @@
 export const birthdayConfig = {
   name: 'Mẫn Xinh Gái',
-  birthdayMessage: 'Lại thêm một tuổi nữa rồi đó con bạn thân!\nChúc mày bớt khùng, bớt báo, tiền vô như nước.\nVà quan trọng nhất là mãi chơi thân với tao nha má! 💅',
+  birthdayMessage: 'Lại thêm một tuổi nữa rồi đó!\nChúc Mẫn mọi thứ nhé, muốn chúc từng cấy nhưng mà sợ sến Mẫn dị ứng.\nNhưng chúc chi chúc quan trọng nhất là mãi chơi thân với t nha Mẫn! 💅',
   closingMessage: "Happy Birthday con bạn thân, bạn cùng xe học hóa xinh gái nhất quả đất! ❤️🎂",
   secretMessage: 'Khiếp, mò vô tận đây luôn? Tính tìm tiền mừng tuổi à? Mơ đi cưng, ra ăn bánh kem lẹ tề! 🍰🤣',
   
