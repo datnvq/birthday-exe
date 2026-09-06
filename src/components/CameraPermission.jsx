@@ -56,6 +56,7 @@ const CameraPermission = ({ onGranted, onSkip }) => {
         <div style={styles.box}>
           <h2 style={styles.subtitle}>CAMERA ACCESS REQUIRED</h2>
           <p style={styles.text}>Một thứ hơi đáng ngờ đang chuẩn bị xảy ra...</p>
+          <p style={styles.text}>Nhớ mở âm thanh ở cái nút trên góc phải nha Mẫn...</p>
           <p style={styles.textSmall}>📷 Cho phép camera để hệ thống có thể nhìn thấy reaction của bạn.</p>
           
           <button 
