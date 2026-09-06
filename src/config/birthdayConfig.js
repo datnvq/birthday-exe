@@ -31,7 +31,7 @@ export const birthdayConfig = {
   camera: {
     enabled: true,
     recordReaction: true,
-    showOverlay: true
+    showOverlay: false // Ẩn khung cam trên màn hình để tạo bất ngờ, nhưng video xuất ra vẫn có camera PiP góc phải
   }
 };
 
