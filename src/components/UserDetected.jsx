@@ -58,35 +58,38 @@ const UserDetected = ({ onComplete, config }) => {
     container: {
       display: 'flex',
       flexDirection: 'column',
-      gap: '1.5rem',
+      gap: 'clamp(0.8rem, 2vh, 1.5rem)',
       alignItems: 'center',
-      textAlign: 'center'
+      textAlign: 'center',
+      padding: '0 clamp(16px, 4vw, 32px)',
+      maxWidth: 'min(700px, 92vw)'
     },
     detected: {
       fontFamily: '"JetBrains Mono", monospace',
       textTransform: 'uppercase',
-      letterSpacing: '4px',
+      letterSpacing: 'clamp(2px, 1vw, 4px)',
       color: '#F6C85F',
-      fontSize: '1.5rem',
+      fontSize: 'clamp(1.1rem, 4vw, 1.6rem)',
       fontWeight: 'bold',
-      marginBottom: '1rem'
+      marginBottom: 'clamp(0.5rem, 1.5vh, 1rem)'
     },
     text: {
       fontFamily: '"Inter", sans-serif',
-      fontSize: '1.8rem',
-      opacity: 0
+      fontSize: 'clamp(1rem, 3.5vw, 1.6rem)',
+      opacity: 0,
+      lineHeight: 1.4
     },
     accent: {
       color: '#F6C85F'
     },
     subtle: {
       color: '#F6C85F',
-      fontSize: '1.4rem'
+      fontSize: 'clamp(0.9rem, 3vw, 1.3rem)'
     },
-    scan: { opacity: 0 },
-    match: { opacity: 0 },
-    warning: { opacity: 0 },
-    init: { opacity: 0 }
+    scan: { opacity: 0, fontSize: 'clamp(0.9rem, 3vw, 1.2rem)', color: 'rgba(255,255,255,0.7)' },
+    match: { opacity: 0, fontSize: 'clamp(1rem, 3.5vw, 1.4rem)', fontWeight: 600, color: '#4ade80' },
+    warning: { opacity: 0, fontSize: 'clamp(0.95rem, 3.2vw, 1.3rem)', color: '#F2A0C4' },
+    init: { opacity: 0, fontSize: 'clamp(0.9rem, 3vw, 1.2rem)', color: 'rgba(255,255,255,0.8)' }
   };
 
   return (

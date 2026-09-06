@@ -102,7 +102,7 @@ export default function BirthdayCake({ onComplete, config, onCakeEmerge, onCandl
   } else if (phase === 'WISH') {
     gateActive = true;
     gateKey = 'WISH';
-    gateText = '[ Ước lẹ đi ]';
+    gateText = '[ Ước xong đời mô rồi, tiếp đê ]';
     handleInteract = handleMakeWish;
   }
 
@@ -224,11 +224,11 @@ export default function BirthdayCake({ onComplete, config, onCakeEmerge, onCandl
         )}
       </div>
 
-      <div style={{ marginTop: '50px', textAlign: 'center', height: '60px' }}>
-        <div ref={textRef} style={{ opacity: 0, color: '#FFF', fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: 500 }}>
+      <div style={{ marginTop: 'clamp(30px, 6vh, 50px)', textAlign: 'center', padding: '0 16px' }}>
+        <div ref={textRef} style={{ opacity: 0, color: '#FFF', fontFamily: 'Inter, sans-serif', fontSize: 'clamp(18px, 4vw, 24px)', fontWeight: 500 }}>
           Ước một điều đi bạn tôi ơi ✨
         </div>
-        <div ref={subTextRef} style={{ opacity: 0, color: '#F6C85F', fontFamily: '"JetBrains Mono", monospace', fontSize: '14px', marginTop: '10px' }}>
+        <div ref={subTextRef} style={{ opacity: 0, color: '#F6C85F', fontFamily: '"JetBrains Mono", monospace', fontSize: 'clamp(12px, 3vw, 14px)', marginTop: '8px' }}>
           Bấm vào ngọn nến để thổi tắt nha!
         </div>
       </div>

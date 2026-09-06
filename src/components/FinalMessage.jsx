@@ -98,12 +98,14 @@ const FinalMessage = ({ config, onComplete }) => {
       <div 
         ref={nameRef} 
         style={{
-          fontSize: 'clamp(60px, 12vw, 120px)',
+          fontSize: 'clamp(36px, 8vw, 90px)',
           fontWeight: 700,
           color: '#F6C85F',
-          textShadow: '0 0 20px rgba(246, 200, 95, 0.4)',
+          textShadow: '0 0 25px rgba(246, 200, 95, 0.4)',
           opacity: 0,
-          marginBottom: '40px'
+          marginBottom: 'clamp(20px, 4vh, 35px)',
+          textAlign: 'center',
+          padding: '0 16px',
         }}
       >
         {config?.name || 'NAME'}
@@ -112,19 +114,20 @@ const FinalMessage = ({ config, onComplete }) => {
       <div 
         ref={messageRef} 
         style={{
-          fontSize: 'clamp(14px, 2vw, 20px)',
-          lineHeight: 2,
+          fontSize: 'clamp(14px, 3.2vw, 19px)',
+          lineHeight: 1.8,
           opacity: 0,
-          maxWidth: '500px',
+          maxWidth: 'min(550px, 90vw)',
           textAlign: 'center',
           fontWeight: 300,
-          marginBottom: '30px'
+          marginBottom: 'clamp(15px, 3vh, 25px)',
+          padding: '0 16px',
         }}
       >
         {(config?.birthdayMessage || 'Another year.\nAnother chapter.\nAnd hopefully, a lot of good memories ahead.')
           .split('\n')
           .map((line, i) => (
-            <p key={i} style={{ margin: 0 }}>{line}</p>
+            <p key={i} style={{ margin: '4px 0' }}>{line}</p>
           ))
         }
       </div>
@@ -133,10 +136,12 @@ const FinalMessage = ({ config, onComplete }) => {
         ref={closingRef} 
         style={{
           color: '#F472B6',
-          fontSize: 'clamp(16px, 2.5vw, 22px)',
+          fontSize: 'clamp(15px, 3.5vw, 22px)',
           fontWeight: 500,
           opacity: 0,
-          marginBottom: '60px'
+          marginBottom: 'clamp(25px, 5vh, 45px)',
+          textAlign: 'center',
+          padding: '0 16px',
         }}
       >
         {config?.closingMessage || "I'm really glad you're here. ❤️"}

@@ -313,12 +313,17 @@ const styles = {
     zIndex: 5,
   },
   text: {
-    marginTop: '40px',
+    marginTop: 'clamp(24px, 5vh, 40px)',
     fontFamily: 'JetBrains Mono, monospace',
-    fontSize: '0.85rem',
+    fontSize: 'clamp(0.8rem, 2.8vw, 0.95rem)',
     color: '#E0E0E0',
-    letterSpacing: '2px',
-    opacity: 0.5,
+    letterSpacing: 'clamp(1px, 0.5vw, 2px)',
+    textAlign: 'center',
+    padding: '6px 16px',
+    borderRadius: '20px',
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    border: '1px solid rgba(255,255,255,0.08)',
+    opacity: 0.8,
   }
 };
 

@@ -119,8 +119,9 @@ const App = () => {
 
   return (
     <div id="app-root" style={{
-      width: '100vw',
-      height: '100vh',
+      width: '100%',
+      height: '100%',
+      minHeight: '100dvh',
       position: 'relative',
       overflow: 'hidden',
       backgroundColor: '#07080C',
@@ -131,8 +132,14 @@ const App = () => {
           onClick={() => setIsMuted(!isMuted)}
           aria-label={isMuted ? 'Unmute audio' : 'Mute audio'}
           style={{
-            position: 'fixed', top: '20px', right: '20px', zIndex: 1000,
-            fontSize: '24px', background: 'none', border: 'none',
+            position: 'fixed', 
+            top: 'max(16px, env(safe-area-inset-top, 16px))', 
+            right: 'max(16px, env(safe-area-inset-right, 16px))', 
+            zIndex: 1000,
+            fontSize: 'clamp(20px, 4vw, 26px)', 
+            background: 'rgba(0,0,0,0.3)', 
+            borderRadius: '50%',
+            border: '1px solid rgba(255,255,255,0.1)',
             cursor: 'pointer', padding: '8px', lineHeight: 1,
             opacity: 0.6, transition: 'opacity 0.2s',
           }}
