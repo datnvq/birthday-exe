@@ -41,21 +41,16 @@ export default function BirthdayCake({ onComplete, config, onCakeEmerge, onCandl
           setTimeout(callbacksRef.current.onCandleLight, i * 400); 
         });
       }
-      let ctx = gsap.context(() => {
-        const tl = createCandleLighting(flameRefs.current);
-        tl.then(() => {
-          flameRefs.current.forEach(flame => {
-            if (flame) {
-              flickerTweens.current.push(createFlameFlicker(flame));
-            }
-          });
-          setPhase('WISH');
+      
+      const tl = createCandleLighting(flameRefs.current);
+      tl.then(() => {
+        flameRefs.current.forEach(flame => {
+          if (flame) {
+            flickerTweens.current.push(createFlameFlicker(flame));
+          }
         });
+        setPhase('WISH');
       });
-      return () => {
-        ctx.revert();
-        flickerTweens.current.forEach(t => t.kill());
-      };
     }
   }, [phase]);
 
@@ -83,12 +78,13 @@ export default function BirthdayCake({ onComplete, config, onCakeEmerge, onCandl
     if (phase !== 'WISH') return;
     if (onExtinguish) onExtinguish();
     
-    let ctx = gsap.context(() => {
-      extinguishFlames(flameRefs.current, () => {
-        if (onComplete) onComplete();
-      });
-      gsap.to([textRef.current, subTextRef.current], { opacity: 0, duration: 0.5 });
+    // Stop the flickering tweens before extinguishing
+    flickerTweens.current.forEach(t => t.kill());
+    
+    extinguishFlames(flameRefs.current, () => {
+      if (onComplete) onComplete();
     });
+    gsap.to([textRef.current, subTextRef.current], { opacity: 0, duration: 0.5 });
     
     setPhase('EXTINGUISHED');
   };

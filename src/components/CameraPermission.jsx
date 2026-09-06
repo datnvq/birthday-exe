@@ -71,7 +71,7 @@ const CameraPermission = ({ onGranted, onSkip }) => {
             [ CÔNG CHÚA Y VINH BỮA NI NGẠI ]
           </button>
 
-          <p style={styles.privacy}>Video chỉ được xử lý trên thiết bị này.</p>
+          
         </div>
       );
     }
